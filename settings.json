@@ -89,7 +89,8 @@
         // To learn more about selection, visit https://aka.ms/terminal-selection
         { "command": {"action": "copy", "singleLine": false }, "keys": "ctrl+c" },
         { "command": "paste", "keys": "ctrl+v" },
-        { "command": {"action": "closeTab", "singleLine": false }, "keys": "ctrl+w" },
+        { "command": {"action": "closeTab", "singleLine": false }, "keys": "ctrl+shift+w" },
+        { "command": {"action": "closePane", "singleLine": false }, "keys": "ctrl+w" },
         { "command": {"action": "newTab", "singleLine": false }, "keys": "ctrl+t" },
         { "command": { "action": "newTab","profile":"ssh_kali", "index": 0 }, "keys": "ctrl+1" },
         { "command": { "action": "newTab","profile":"ssh_appsec", "index": 0 }, "keys": "ctrl+2" },
