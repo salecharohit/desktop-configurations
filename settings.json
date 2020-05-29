@@ -59,6 +59,18 @@
                 "hidden": false,
                 "name": "Azure Cloud Shell",
                 "source": "Windows.Terminal.Azure"
+            },
+            {
+                "guid": "{a9294a30-8a12-4883-9865-2e11e845b8e6}",
+                "hidden": false,
+                "name": "SSH Kali",
+                "commandline" : "wsl.exe ssh kali"
+            },
+            {
+                "guid": "{a9194a30-8a12-4883-9865-2e11e845b8e6}",
+                "hidden": false,
+                "name": "SSH linux.webdevsecurity.com",
+                "commandline" : "wsl.exe ssh appsec"
             }
         ]
     },
@@ -77,11 +89,12 @@
         // To learn more about selection, visit https://aka.ms/terminal-selection
         { "command": {"action": "copy", "singleLine": false }, "keys": "ctrl+c" },
         { "command": "paste", "keys": "ctrl+v" },
-        { "command": {"action": "closeTab", "singleLine": false }, "keys": "ctrl+w" },
-        { "command": {"action": "newTab", "singleLine": false }, "keys": "ctrl+t" },
+        { "command": {"action": "closeTab", "singleLine": false }, "keys": "alt+w" },
+        { "command": {"action": "newTab", "singleLine": false }, "keys": "alt+t" },
         // Press Ctrl+Shift+F to open the search box
-        { "command": "find", "keys": "ctrl+shift+f" },
-
+        { "command": "find", "keys": "alt+f" },
+        { "command": "nextTab", "keys": "alt+right" },
+        { "command": "prevTab", "keys": "alt+left" },
         // Press Alt+Shift+D to open a new pane.
         // - "split": "auto" makes this pane open in the direction that provides the most surface area.
         // - "splitMode": "duplicate" makes the new pane use the focused pane's profile.
