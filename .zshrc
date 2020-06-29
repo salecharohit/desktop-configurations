@@ -118,6 +118,6 @@ ZSH_AUTOSUGGEST_BUFFER_MAX_SIZE=20
 ZSH_AUTOSUGGEST_HISTORY_IGNORE=?(#c50,)
 #eval `dircolors ~/.dircolors`
 export DOCKER_TLS_VERIFY=1
-export DOCKER_HOST=tcp://192.168.99.100:2376
+export DOCKER_HOST=tcp://$(minikube ip):2376
 export DOCKER_CERT_PATH=/c/Users/rohit/.minikube
 export MINIKUBE_ACTIVE_DOCKERD=minikube
