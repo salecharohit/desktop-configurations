@@ -71,7 +71,14 @@
                 "hidden": false,
                 "name": "ssh_appsec",
                 "commandline" : "wsl.exe ssh appsec"
-            }
+            },
+//https://github.com/microsoft/terminal/issues/632            
+            {
+                "name": "Windows Terminal (elevated)",
+                "commandline": "powershell.exe -command Start-Process -Verb RunAs \"shell:appsFolder\\Microsoft.WindowsTerminal_8wekyb3d8bbwe!App\"",
+                "hidden": false,
+                "icon": "ms-appx:///Images/Square44x44Logo.targetsize-32.png"
+            }          
         ]
     },
 
@@ -92,9 +99,11 @@
         { "command": {"action": "closeTab", "singleLine": false }, "keys": "ctrl+shift+w" },
         { "command": {"action": "closePane", "singleLine": false }, "keys": "ctrl+w" },
         { "command": {"action": "newTab", "singleLine": false }, "keys": "ctrl+t" },
-        { "command": { "action": "newTab","profile":"ssh_kali", "index": 0 }, "keys": "ctrl+1" },
-        { "command": { "action": "newTab","profile":"ssh_appsec", "index": 0 }, "keys": "ctrl+2" },
-        { "command": { "action": "newTab","profile":"Command Prompt", "index": 0 }, "keys": "ctrl+3" },
+        { "command": { "action": "newTab", "index": 0 }, "keys": "ctrl+1" },
+        { "command": { "action": "newTab", "index": 0 }, "keys": "ctrl+2" },
+        { "command": { "action": "newTab", "index": 0 }, "keys": "ctrl+3" },
+        { "command": { "action": "nextTab", "index": 0 }, "keys": "alt+right" },
+        { "command": { "action": "prevTab", "index": 0 }, "keys": "alt+left" },
         // Press Ctrl+Shift+F to open the search box
         { "command": "find", "keys": "ctrl+shift+f" },
         // Press Alt+Shift+D to open a new pane.
