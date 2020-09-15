@@ -82,12 +82,9 @@ alias kubectl='kubectl.exe'
 alias minikube='minikube.exe'
 alias explorer='explorer.exe .'
 alias mdbook='mdbook.exe'
-#https://github.com/anantshri/script-collection/blob/master/Shell/gitrebase
 alias gitrebase='~/gitrebase.sh'
-
-npp() {
-        notepad++.exe "$1" &
-}
+alias personal='cd ~/Desktop/development/personal'
+alias office='cd ~/Desktop/development/professional'
 
 # User configuration
 
