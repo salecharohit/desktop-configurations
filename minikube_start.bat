@@ -1,2 +1,2 @@
 @ECHO OFF
-minikube start
+minikube start --driver=virtualbox
