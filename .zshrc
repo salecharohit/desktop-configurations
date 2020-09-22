@@ -1,6 +1,6 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
-
+export PATH="$HOME/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/c/Program Files/WindowsApps/Microsoft.WindowsTerminal_1.2.2381.0_x64__8wekyb3d8bbwe:/c/WINDOWS/system32:/c/WINDOWS:/c/WINDOWS/System32/Wbem:/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/c/WINDOWS/System32/OpenSSH/:/c/Program Files/Intel/WiFi/bin/:/c/Program Files/Common Files/Intel/WirelessCommon/:/c/ProgramData/chocolatey/bin:/c/Program Files/Microsoft VS Code/bin:/c/Users/rohit/mbook:/c/HashiCorp/Vagrant/bin:/c/Program Files (x86)/VMware/VMware Workstation/OVFTool:/c/Program Files/dotnet/:/c/Program Files/Microsoft SQL Server/130/Tools/Binn/:/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/:/c/Program Files (x86)/GnuPG/bin:/c/Program Files/OpenJDK/jdk-15/bin:/c/Users/rohit/AppData/Local/Microsoft/WindowsApps:/c/Program Files/Oracle/VirtualBox"
 # Path to your oh-my-zsh installation.
 export ZSH="/c/Users/rohit/.oh-my-zsh"
 
