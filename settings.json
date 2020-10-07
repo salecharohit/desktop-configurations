@@ -19,6 +19,7 @@
     // If enabled, formatted data is also copied to your clipboard
     "copyFormatting": false,
     "theme": "dark",
+    "historySize": 9999999999,
     // A profile specifies a command to execute paired with information about how it should look and feel.
     // Each one of them will appear in the 'New Tab' dropdown,
     //   and can be invoked from the commandline with `wt.exe -p xxx`
@@ -60,6 +61,18 @@
                 "name": "Azure Cloud Shell",
                 "source": "Windows.Terminal.Azure"
             },
+            {
+                "guid": "{a9294a30-8a12-4883-9865-2e11e845b8e6}",
+                "hidden": false,
+                "name": "ssh_kali",
+                "commandline" : "wsl.exe ssh kali"
+            },
+            {
+                "guid": "{a9194a30-8a12-4883-9865-2e11e845b8e6}",
+                "hidden": false,
+                "name": "ssh_appsec",
+                "commandline" : "wsl.exe ssh appsec"
+            },
 //https://github.com/microsoft/terminal/issues/632            
             {
                 "name": "Windows Terminal (elevated)",
@@ -84,14 +97,14 @@
         // To learn more about selection, visit https://aka.ms/terminal-selection
         { "command": {"action": "copy", "singleLine": false }, "keys": "ctrl+c" },
         { "command": "paste", "keys": "ctrl+v" },
-        { "command": {"action": "closeTab", "singleLine": false }, "keys": "ctrl+shift+w" },
-        { "command": {"action": "closePane", "singleLine": false }, "keys": "ctrl+w" },
+        { "command": {"action": "closeTab", "singleLine": false }, "keys": "ctrl+w" },
+        { "command": {"action": "closePane", "singleLine": false }, "keys": "alt+w" },
         { "command": {"action": "newTab", "singleLine": false }, "keys": "ctrl+t" },
         { "command": { "action": "newTab", "index": 0 }, "keys": "ctrl+1" },
         { "command": { "action": "newTab", "index": 0 }, "keys": "ctrl+2" },
         { "command": { "action": "newTab", "index": 0 }, "keys": "ctrl+3" },
-        { "command": { "action": "nextTab", "index": 0 }, "keys": "alt+right" },
-        { "command": { "action": "prevTab", "index": 0 }, "keys": "alt+left" },
+        // { "command": { "action": "nextTab", "index": 0 }, "keys": "ctrl+right" },
+        // { "command": { "action": "prevTab", "index": 0 }, "keys": "ctrl+left" },
         // Press Ctrl+Shift+F to open the search box
         { "command": "find", "keys": "ctrl+shift+f" },
         // Press Alt+Shift+D to open a new pane.
