@@ -85,6 +85,7 @@ alias mdbook='mdbook.exe'
 alias gitrebase='~/gitrebase.sh'
 alias personal='cd ~/Desktop/development/personal'
 alias office='cd ~/Desktop/development/professional'
+alias refreshenv='source ~/.zshrc'
 
 # User configuration
 
