@@ -84,6 +84,8 @@ alias mdbook='mdbook.exe'
 alias personal='cd ~/code/personal'
 alias office='cd ~/code/professional'
 alias refreshenv='source ~/.zshrc'
+alias java='java.exe'
+alias npo='/c/Users/rohit/tools/nmap-parse-output/nmap-parse-output'
 
 # User configuration
 
@@ -119,3 +121,7 @@ export DOCKER_TLS_VERIFY=1
 export DOCKER_HOST=tcp://$(minikube ip):2376
 export DOCKER_CERT_PATH=/c/Users/rohit/.minikube
 export MINIKUBE_ACTIVE_DOCKERD=minikube
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
