@@ -1,7 +1,8 @@
 # If you come from bash you might have to change your $PATH.
+# export PATH=$HOME/bin:/usr/local/bin:$PATH
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 # Path to your oh-my-zsh installation.
-export ZSH="/c/Users/rohit/.oh-my-zsh"
+export ZSH="/home/ubuntu/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -67,10 +68,11 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-autosuggestions)
+plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
-
+export home='/mnt/c/Users/rohit'
+alias home='cd $home'
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
@@ -81,11 +83,17 @@ alias kubectl='kubectl.exe'
 alias minikube='minikube.exe'
 alias explorer='explorer.exe .'
 alias mdbook='mdbook.exe'
-alias personal='cd ~/code/personal'
-alias office='cd ~/code/professional'
+alias personal='cd $home/code/personal'
+alias office='cd $home/code/professional'
 alias refreshenv='source ~/.zshrc'
 alias java='java.exe'
-alias npo='/c/Users/rohit/tools/nmap-parse-output/nmap-parse-output'
+alias npo='$home/tools/nmap-parse-output/nmap-parse-output'
+alias ta='terraform apply --auto-approve'
+alias td='terraform destroy --auto-approve'
+alias tv='terraform validate'
+alias tp='terraform plan'
+alias ti='terraform init'
+
 
 # User configuration
 
@@ -112,10 +120,6 @@ alias npo='/c/Users/rohit/tools/nmap-parse-output/nmap-parse-output'
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#ffffff,bg=yellow,bold,underline"
-ZSH_AUTOSUGGEST_STRATEGY=(history completion)
-ZSH_AUTOSUGGEST_BUFFER_MAX_SIZE=20
-ZSH_AUTOSUGGEST_HISTORY_IGNORE=?(#c50,)
 #eval `dircolors ~/.dircolors`
 export DOCKER_TLS_VERIFY=1
 export DOCKER_HOST=tcp://$(minikube ip):2376
