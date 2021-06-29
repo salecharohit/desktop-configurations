@@ -71,7 +71,7 @@ ZSH_THEME="robbyrussell"
 plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
-export home='/mnt/c/Users/rohit'
+export home='/c/Users/rohit'
 alias home='cd $home'
 alias ll='ls -alF'
 alias la='ls -A'
