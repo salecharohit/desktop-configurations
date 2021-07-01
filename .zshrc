@@ -2,7 +2,8 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 # Path to your oh-my-zsh installation.
-export ZSH="/home/ubuntu/.oh-my-zsh"
+export home='/c/Users/rohit'
+export ZSH="$home/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -71,8 +72,6 @@ ZSH_THEME="robbyrussell"
 plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
-export home='/c/Users/rohit'
-alias home='cd $home'
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
@@ -84,6 +83,7 @@ alias minikube='minikube.exe'
 alias explorer='explorer.exe .'
 alias mdbook='mdbook.exe'
 alias personal='cd $home/code/personal'
+alias cobalt='cd $home/Desktop/rohitsalecha/cobalt/projects'
 alias office='cd $home/code/professional'
 alias refreshenv='source ~/.zshrc'
 alias java='java.exe'
