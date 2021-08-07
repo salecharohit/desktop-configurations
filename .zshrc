@@ -1,9 +1,8 @@
 # If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
-export PATH=$HOME/bin:/usr/local/bin:$PATH
+# export PATH=$HOME/bin:/usr/local/bin:$PATH 
+export PATH=$HOME/bin:/usr/local/bin:$HOME/.local/bin:$PATH
 # Path to your oh-my-zsh installation.
-export home='/c/Users/rohit'
-export ZSH="$home/.oh-my-zsh"
+export ZSH="/home/ubuntu/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -72,6 +71,8 @@ ZSH_THEME="robbyrussell"
 plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
+export home='/c/Users/rohit'
+alias home='cd $home'
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
@@ -79,9 +80,8 @@ alias choco='choco.exe'
 alias tcopy='clip.exe'
 alias explorer='explorer.exe .'
 alias vagrant='vagrant.exe'
-alias personal='cd $home/code/personal'
-alias cobalt='cd $home/Desktop/rohitsalecha/cobalt/projects'
 alias office='cd $home/code/professional'
+alias personal='cd ~/code'
 alias refreshenv='source ~/.zshrc'
 alias npo='$home/tools/nmap-parse-output/nmap-parse-output'
 alias ta='terraform apply --auto-approve'
@@ -89,7 +89,9 @@ alias td='terraform destroy --auto-approve'
 alias tv='terraform validate'
 alias tp='terraform plan'
 alias ti='terraform init'
-
+alias dockerstop='docker stop $(docker ps -aq)'
+alias dockerrm='docker rm $(docker ps -aq)'
+alias cobalt='cd /c/Users/rohit/Desktop/rohitsalecha/cobalt'
 
 # User configuration
 
@@ -117,3 +119,10 @@ alias ti='terraform init'
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 #eval `dircolors ~/.dircolors`
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="/home/ubuntu/.sdkman"
+[[ -s "/home/ubuntu/.sdkman/bin/sdkman-init.sh" ]] && source "/home/ubuntu/.sdkman/bin/sdkman-init.sh"
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion

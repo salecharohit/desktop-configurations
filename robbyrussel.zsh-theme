@@ -1,4 +1,4 @@
-PROMPT="%{$fg_bold[white]%}%n "
+PROMPT="%{$fg_bold[magenta]%}%n "
 PROMPT+="%(?:%{$fg_bold[green]%}➜ :%{$fg_bold[red]%}➜ )"
 PROMPT+='%{$fg[cyan]%}%c%{$reset_color%} $(git_prompt_info)'
 RPROMPT='%*'
